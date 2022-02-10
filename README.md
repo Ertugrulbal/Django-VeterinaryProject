@@ -50,5 +50,5 @@ Ex.: Run `python manage.py runserver 0.0.0.0:5252` and go to [`http://0.0.0.0:52
 
 It contains functions, classes and constants to be used as a basis in the core.
 
-##Pet
+## Pet
 It contains pet model and petOwner model for pets.
