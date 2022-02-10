@@ -52,3 +52,32 @@ It contains functions, classes and constants to be used as a basis in the core.
 
 ## Pet
 It contains pet model and petOwner model for pets.
+
+### Deployment at Heroku
+##Docker and Heroku 
+In order to work any dependencies, I deployed project at Heroku portal.
+- All of the steps indicated below:
+>docker build -t registry.heroku.com/APP_NAME/web .
+
+>heroku login
+
+>heroku create APP_NAME
+
+>heroku config:set SECRET_KEY='secret_key' ALLOWED_HOSTS='APP_NAME.herokuapp.com' TIME_ZONE='UTC' -a APP_NAME
+
+>heroku container:login
+
+>docker push registry.heroku.com/APP_NAME/web
+
+>heroku container:release -a APP_NAME web
+
+>heroku run python manage.py migrate -a APP_NAME
+
+>heroku run python manage.py compilemessages -a APP_NAME
+
+>heroku run python manage.py createsuperuser --email=your@email.com -a APP_NAME
+
+## Log
+>heroku logs --tail**
+
+### You can visit vetproject.herokuapp.com
