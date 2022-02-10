@@ -14,10 +14,6 @@ class PetViewSet(DetailedViewSetMixin, viewsets.ModelViewSet):
     serializer_class = PetSerializer
     filterset_class = PetFilter
 
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        user = self.request.user
-        return queryset.filter(customer=user)
 
 class PetOwnerViewSet(viewsets.ModelViewSet):
     queryset = PetOwner.objects.all()
