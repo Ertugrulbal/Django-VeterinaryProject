@@ -34,7 +34,7 @@ In order to enter the admin panel, it is necessary to create a super user. It ca
 In order to enter a API page, you must be a logged in.
 - We have two api; pet and petOwner.
 - If you logged in, you can do CRUD Operations.
-  We also made a filter operations. If you want to filtration on;
+  # We also made a filter operations. If you want to filtration on;
 - Pet API, you can fill a filter fields which are Name, Type and Variety 
 - PetOwner API, you can fill a filter field which is PetOwner Name
 ## Run 
