@@ -31,7 +31,8 @@ In order for the changes to be created in the form of SQL Tables, the migrate op
 
 In order to enter the admin panel, it is necessary to create a super user. It can be done with the following command: `python manage.py createsuperuser`. Then type email and password.
 ### Django Rest Framework API Management
-In order to enter a API page, you must be a logged in.
+In order to enter a API page, you must enter localhost:8000/api and must be logged in. 
+
 - We have two api; pet and petOwner.
 - If you logged in, you can do CRUD Operations.
 > We also made a filter operations. If you want to filtration on;
